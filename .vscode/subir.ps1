@@ -1,8 +1,3 @@
-﻿# Sube la carpeta aipage a https://aipage.rivadex.com
-# En VS Code: Ctrl+Shift+B  (o menú Terminal > Ejecutar tarea de compilación)
-#
-# - Sube todo lo de la carpeta (menos .vscode). Lo que borres aquí también se borra en la web.
-# - La versión anterior queda guardada en el servidor (/var/www/aipage.anterior) por si hay que volver atrás.
 
 $ErrorActionPreference = 'Stop'
 $carpeta = Split-Path -Parent $PSScriptRoot
