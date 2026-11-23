@@ -1,0 +1,54 @@
+.historia-cabecera {
+padding: 56px 20px 0;
+text-align: center;
+}
+.historia-titulo {
+font-family: 'Fraunces', serif;
+font-size: 36px;
+font-weight: 500;
+}
+.linea {
+max-width: 720px;
+margin: 0 auto;
+border-left: 2px solid var(--rosa);
+}
+.momento {
+margin: 0 0 24px 20px;
+padding: 18px 20px;
+background-color: var(--blanco);
+border: 1px solid var(--borde);
+border-radius: 20px;
+}
+.momento-anio {
+font-size: 13px;
+font-weight: 700;
+color: var(--rosa);
+}
+.momento h3 {
+font-size: 18px;
+margin-top: 6px;
+}
+.momento p {
+font-size: 14px;
+color: var(--gris);
+margin-top: 6px;
+}
+@media (min-width: 768px) {
+.historia-cabecera {
+padding: 80px 32px 0;
+}
+.historia-titulo {
+font-size: 56px;
+}
+.momento {
+margin-left: 32px;
+}
+}
+@media (min-width: 1200px) {
+.historia-cabecera {
+padding: 96px 48px 0;
+}
+.historia-titulo {
+font-size: 72px;
+}
+}

@@ -1,0 +1,64 @@
+.tuia-cabecera {
+padding: 56px 20px 0;
+text-align: center;
+}
+.tuia-titulo {
+font-family: 'Fraunces', serif;
+font-size: 36px;
+font-weight: 500;
+}
+.opciones {
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+.opcion {
+background-color: var(--blanco);
+border: 1px solid var(--borde);
+border-radius: 20px;
+padding: 22px;
+}
+.opcion h3 {
+font-size: 18px;
+}
+.opcion p {
+font-size: 14px;
+color: var(--gris);
+margin-top: 6px;
+}
+.opcion-ia {
+display: inline-block;
+margin-top: 14px;
+padding: 6px 12px;
+border-radius: 30px;
+background-color: var(--fondo-alterno);
+color: var(--rosa);
+font-size: 12px;
+font-weight: 600;
+}
+@media (min-width: 768px) {
+.tuia-cabecera {
+padding: 80px 32px 0;
+}
+.tuia-titulo {
+font-size: 56px;
+}
+.opciones {
+flex-direction: row;
+flex-wrap: wrap;
+}
+.opcion {
+width: calc(50% - 8px);
+}
+}
+@media (min-width: 1200px) {
+.tuia-cabecera {
+padding: 96px 48px 0;
+}
+.tuia-titulo {
+font-size: 72px;
+}
+.opcion {
+width: calc(25% - 12px);
+}
+}
