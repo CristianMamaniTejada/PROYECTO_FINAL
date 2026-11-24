@@ -31,11 +31,95 @@
 
 <section class="tuia-cabecera">
 <h2 class="tuia-titulo">Encuentra tu IA.</h2>
-<p class="seccion-texto">Elige lo que quieres hacer.</p>
-<img class="cabecera-foto" src="img/estudiante.jpg" alt="Estudiante usando una laptop en el aula">
+<p class="seccion-texto">Cuatro preguntas y te decimos qué IA usar.</p>
+<img class="cabecera-foto" src="img/chip-ia.jpg" alt="Chip de computadora con las letras AI">
 </section>
 
 <section class="seccion">
+<form class="cuestionario" id="cuestionario">
+<fieldset class="pregunta-ia">
+<legend>1. ¿Qué quieres hacer?</legend>
+<label><input type="radio" name="objetivo" value="escribir" required> Escribir y organizar ideas</label>
+<label><input type="radio" name="objetivo" value="estudiar"> Estudiar e investigar con fuentes</label>
+<label><input type="radio" name="objetivo" value="programar"> Programar</label>
+<label><input type="radio" name="objetivo" value="crear"> Crear imágenes, voz o música</label>
+</fieldset>
+<fieldset class="pregunta-ia">
+<legend>2. ¿Cuánto sabes de IA?</legend>
+<label><input type="radio" name="nivel" value="nuevo" required> Recién empiezo</label>
+<label><input type="radio" name="nivel" value="medio"> Ya la uso a veces</label>
+<label><input type="radio" name="nivel" value="avanzado"> La uso todos los días</label>
+</fieldset>
+<fieldset class="pregunta-ia">
+<legend>3. ¿Cuánto puedes pagar?</legend>
+<label><input type="radio" name="presupuesto" value="gratis" required> Nada, solo gratis</label>
+<label><input type="radio" name="presupuesto" value="pago"> Puedo pagar un plan</label>
+</fieldset>
+<fieldset class="pregunta-ia">
+<legend>4. ¿Dónde la vas a usar?</legend>
+<label><input type="radio" name="lugar" value="web" required> En el navegador o el celular</label>
+<label><input type="radio" name="lugar" value="local"> En mi computadora, sin internet</label>
+</fieldset>
+<button class="boton boton-principal" type="submit">Ver mi IA</button>
+</form>
+<div class="resultado" id="resultado" hidden>
+<span class="resultado-etiqueta">Te recomendamos</span>
+<h3 id="resultado-nombre"></h3>
+<p id="resultado-texto"></p>
+<a class="boton boton-principal" id="resultado-enlace" href="#" target="_blank" rel="noopener">Abrir sitio oficial</a>
+</div>
+</section>
+
+<section class="seccion seccion-alterna">
+<div class="modelos-cabecera">
+<div>
+<h2 class="seccion-titulo">Los modelos más capaces hoy.</h2>
+<p class="seccion-texto">Datos a noviembre de 2026. Puntaje del Índice de Inteligencia de Artificial Analysis (v5): más alto es mejor.</p>
+</div>
+<img class="modelos-foto" src="img/red-fisica.jpg" alt="Una red neuronal representada con objetos físicos conectados">
+</div>
+<div class="modelos">
+<div class="modelo">
+<span class="modelo-puntaje">65</span>
+<h3>Claude Fable 5.2</h3>
+<span class="modelo-empresa">Anthropic · 9 nov 2026</span>
+<p>El número 1 del índice. Razona en problemas largos, programa proyectos completos y puede trabajar horas en una sola tarea.</p>
+</div>
+<div class="modelo">
+<span class="modelo-puntaje">62</span>
+<h3>GPT-6.2 Astra</h3>
+<span class="modelo-empresa">OpenAI · 17 nov 2026</span>
+<p>Muy cerca del primero y mucho más barato por tarea. Fuerte en código, documentos y en usar la computadora por ti.</p>
+</div>
+<div class="modelo">
+<span class="modelo-puntaje">61</span>
+<h3>Gemini 4 Neon</h3>
+<span class="modelo-empresa">Google · 18 nov 2026</span>
+<p>Lee texto, imágenes, audio y video juntos. Buena opción para estudiar con tus propios archivos.</p>
+</div>
+<div class="modelo">
+<span class="modelo-puntaje">57</span>
+<h3>GPT-6.2 Sol</h3>
+<span class="modelo-empresa">OpenAI · 17 nov 2026</span>
+<p>La opción más barata con nivel alto. Ideal para tareas del día a día.</p>
+</div>
+<div class="modelo">
+<span class="modelo-puntaje">Abierto</span>
+<h3>DeepSeek V4.1 Flash</h3>
+<span class="modelo-empresa">DeepSeek · oct 2026</span>
+<p>Modelo abierto que entiende texto e imágenes. Se puede instalar en tu propia computadora.</p>
+</div>
+<div class="modelo">
+<span class="modelo-puntaje">Abierto</span>
+<h3>Qwen4-Max</h3>
+<span class="modelo-empresa">Alibaba · 16 nov 2026</span>
+<p>Muy bueno en muchos idiomas, incluido el español, y con versiones gratuitas.</p>
+</div>
+</div>
+</section>
+
+<section class="seccion">
+<h2 class="seccion-titulo">Herramientas por tarea.</h2>
 <div class="opciones">
 <div class="opcion">
 <h3>Escribir</h3>
@@ -45,7 +129,7 @@
 <div class="opcion">
 <h3>Crear imágenes</h3>
 <p>Dibujos y fotos a partir de una frase.</p>
-<span class="opcion-ia">Midjourney · DALL·E</span>
+<span class="opcion-ia">Midjourney · Gemini · Meta AI</span>
 </div>
 <div class="opcion">
 <h3>Programar</h3>
@@ -66,5 +150,6 @@
 <p>Treav · Explorar, entender, conectar.</p>
 <a href="index.html">Volver al inicio</a>
 </footer>
+<script src="js/cuestionario.js"></script>
 </body>
 </html>

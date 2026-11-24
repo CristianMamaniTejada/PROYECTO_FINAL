@@ -422,3 +422,114 @@ height: 360px;
 height: 380px;
 }
 }
+.red-animada {
+width: 100%;
+max-height: 300px;
+padding: 16px;
+background: var(--pantalla);
+border-radius: 14px;
+}
+.red-lineas line {
+stroke: #3A5A9E;
+stroke-width: 1.5;
+}
+.nodo-red {
+fill: var(--pantalla);
+stroke: #5B8DEF;
+stroke-width: 3;
+animation: encender 3s infinite;
+}
+.capa-2 {
+animation-delay: 1s;
+}
+.capa-3 {
+animation-delay: 2s;
+}
+@keyframes encender {
+0%, 100% {
+fill: var(--pantalla);
+}
+15% {
+fill: var(--amarillo);
+}
+40% {
+fill: var(--pantalla);
+}
+}
+@media (prefers-reduced-motion: reduce) {
+.nodo-red {
+animation: none;
+}
+}
+.mapa {
+position: relative;
+overflow: hidden;
+}
+.mapa-esfera {
+display: block;
+width: 220px;
+height: 220px;
+margin: 0 auto 16px;
+border-radius: 50%;
+object-fit: cover;
+filter: invert(1) hue-rotate(180deg);
+mix-blend-mode: multiply;
+}
+.nodo {
+position: relative;
+background: var(--blanco);
+box-shadow: 0 4px 14px rgba(22, 33, 58, 0.12);
+}
+.mapa .nodo-activo {
+background: var(--amarillo);
+}
+.superior {
+position: sticky;
+top: 10px;
+z-index: 5;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+outline: 3px solid var(--amarillo);
+outline-offset: 3px;
+}
+@media (min-width: 768px) {
+.mapa {
+display: block;
+height: 460px;
+}
+.mapa-esfera {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 380px;
+height: 380px;
+margin: 0;
+transform: translate(-50%, -50%);
+}
+.nodo {
+position: absolute;
+transform: translate(-50%, -50%);
+}
+.nodo-1 {
+top: 50%;
+left: 22%;
+}
+.nodo-2 {
+top: 20%;
+left: 50%;
+}
+.nodo-3 {
+top: 38%;
+left: 78%;
+}
+.nodo-4 {
+top: 82%;
+left: 48%;
+}
+.nodo-5 {
+top: 66%;
+left: 76%;
+}
+}
