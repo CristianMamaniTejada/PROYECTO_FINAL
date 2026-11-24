@@ -3,9 +3,9 @@ padding: 56px 20px 0;
 text-align: center;
 }
 .tuia-titulo {
-font-family: 'Fraunces', serif;
+font-family: 'Bricolage Grotesque', sans-serif;
 font-size: 36px;
-font-weight: 500;
+font-weight: 800;
 }
 .opciones {
 display: flex;
@@ -32,7 +32,7 @@ margin-top: 14px;
 padding: 6px 12px;
 border-radius: 30px;
 background-color: var(--fondo-alterno);
-color: var(--rosa);
+color: var(--azul);
 font-size: 12px;
 font-weight: 600;
 }

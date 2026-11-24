@@ -1,0 +1,109 @@
+.explorar-cabecera {
+padding: 56px 20px 0;
+text-align: center;
+}
+.explorar-titulo {
+font-family: "Bricolage Grotesque", sans-serif;
+font-size: clamp(2rem, 5vw, 4rem);
+font-weight: 800;
+line-height: 1.1;
+}
+.grupos {
+display: grid;
+grid-template-columns: 1fr;
+gap: 14px;
+}
+.grupo {
+padding: 20px;
+background: var(--blanco);
+border: 1px solid var(--borde);
+border-radius: 14px;
+}
+.grupo-etiqueta {
+display: inline-block;
+padding: 2px 8px;
+border-radius: 6px;
+background: var(--amarillo);
+font-size: 0.75rem;
+font-weight: 700;
+}
+.grupo h3 {
+font-family: "Bricolage Grotesque", sans-serif;
+font-size: 1.3rem;
+margin-top: 10px;
+}
+.grupo-uso {
+font-size: 0.9rem;
+color: var(--gris);
+margin-top: 6px;
+}
+.herramientas {
+list-style: none;
+margin-top: 14px;
+border-top: 1px solid var(--borde);
+}
+.herramientas li {
+display: flex;
+justify-content: space-between;
+gap: 10px;
+padding: 10px 0;
+border-bottom: 1px solid var(--borde);
+font-size: 0.85rem;
+color: var(--gris);
+}
+.herramientas a {
+font-weight: 700;
+color: var(--azul);
+text-decoration: none;
+}
+.revisar {
+max-width: 720px;
+margin-top: 20px;
+padding-left: 20px;
+}
+.revisar li {
+padding: 8px 0;
+}
+@media (min-width: 768px) {
+.explorar-cabecera {
+padding: 80px 32px 0;
+}
+.grupos {
+grid-template-columns: 1fr 1fr;
+}
+}
+.opciones-inicio {
+display: grid;
+grid-template-columns: 1fr;
+gap: 12px;
+max-width: 900px;
+margin: 24px auto;
+text-align: left;
+}
+.opcion-inicio {
+padding: 18px 20px;
+background: var(--blanco);
+border: 1px solid var(--borde);
+border-radius: 14px;
+color: var(--tinta);
+text-decoration: none;
+}
+.opcion-inicio:hover {
+border-color: var(--azul);
+}
+.opcion-inicio h3 {
+font-family: "Bricolage Grotesque", sans-serif;
+font-size: 1.15rem;
+}
+.opcion-inicio p {
+font-size: 0.9rem;
+color: var(--gris);
+}
+.botones-izquierda {
+justify-content: flex-start;
+}
+@media (min-width: 768px) {
+.opciones-inicio {
+grid-template-columns: 1fr 1fr;
+}
+}

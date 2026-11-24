@@ -1,0 +1,85 @@
+.contacto-cabecera {
+padding: 56px 20px 0;
+}
+.contacto-titulo {
+font-family: "Bricolage Grotesque", sans-serif;
+font-size: clamp(2rem, 5vw, 4rem);
+font-weight: 800;
+line-height: 1.1;
+max-width: 700px;
+}
+.contacto {
+display: grid;
+grid-template-columns: 1fr;
+gap: 14px;
+}
+.tarjeta-whatsapp {
+padding: 28px;
+background: var(--verde);
+color: var(--tinta);
+border-radius: 14px;
+}
+.tarjeta-whatsapp img {
+width: 52px;
+padding: 6px;
+background: var(--blanco);
+border-radius: 12px;
+}
+.tarjeta-whatsapp span {
+display: block;
+margin-top: 12px;
+font-size: 0.75rem;
+font-weight: 700;
+text-transform: uppercase;
+}
+.tarjeta-whatsapp strong {
+display: block;
+font-family: "Bricolage Grotesque", sans-serif;
+font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+.tarjeta-whatsapp p {
+margin: 6px 0 18px;
+}
+.tarjeta-whatsapp .boton {
+background: var(--tinta);
+color: var(--blanco);
+}
+.motivos {
+display: grid;
+gap: 14px;
+}
+.motivo,
+.pregunta {
+padding: 20px;
+background: var(--blanco);
+border: 1px solid var(--borde);
+border-radius: 14px;
+}
+.motivo h3,
+.pregunta h3 {
+font-family: "Bricolage Grotesque", sans-serif;
+font-size: 1.25rem;
+}
+.motivo p,
+.pregunta p {
+font-size: 0.9rem;
+color: var(--gris);
+margin-top: 4px;
+}
+.preguntas {
+display: grid;
+grid-template-columns: 1fr;
+gap: 14px;
+margin-top: 24px;
+}
+@media (min-width: 768px) {
+.contacto-cabecera {
+padding: 80px 32px 0;
+}
+.contacto {
+grid-template-columns: 1.2fr 1fr;
+}
+.preguntas {
+grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+}
