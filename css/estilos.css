@@ -533,3 +533,26 @@ top: 66%;
 left: 76%;
 }
 }
+.tarjeta {
+display: flex;
+flex-direction: column;
+}
+.tarjeta:not(:has(.tarjeta-imagen))::before {
+content: "";
+display: block;
+height: 160px;
+background-color: var(--pantalla);
+background-size: cover;
+background-position: center;
+}
+.tarjeta:nth-child(2)::before {
+background-image: url("../img/red-fisica.jpg");
+}
+.tarjeta:nth-child(3)::before {
+background-image: url("../img/cerebro-circuito.jpg");
+}
+@media (min-width: 1200px) {
+.tarjeta:not(:has(.tarjeta-imagen))::before {
+height: 200px;
+}
+}
